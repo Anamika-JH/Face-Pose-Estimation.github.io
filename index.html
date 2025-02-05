@@ -139,7 +139,7 @@
         <h2 class="title is-3">DESCRIPTION</h2>
         <div class="content has-text-justified">
           <p style="text-align: justify;">
-            The developed system integrates a real-time face pose estimation algorithm with an immersive display to enhance user interaction through dynamic visual feedback. The methodology involves two primary components: <strong>pose estimation using computer vision techniques</strong> and <strong>real-time synchronization with a Unity-based 3D environment</strong> for immersive visualization.
+            The methodology involves two primary components: <strong>pose estimation using computer vision techniques</strong> and <strong>real-time synchronization with a Unity-based 3D environment</strong> for immersive visualization.
           </p>
           <p>
               The <em>face pose estimation</em> module utilizes a combination of OpenCV and Dlib libraries to detect facial landmarks and compute the head’s orientation relative to the camera. Initially, the system captures video frames from a webcam, which are processed to detect 68 key facial landmarks using Dlib’s pre-trained shape predictor. These 2D image points are mapped to corresponding 3D reference points representing anatomical facial landmarks. Using the Perspective-n-Point (PnP) algorithm, along with camera calibration parameters, the system estimates the <strong>rotation and translation vectors</strong> that describe the face’s position and orientation in 3D space.
@@ -147,10 +147,6 @@
           <p>
               To achieve real-time performance, the estimated translation vectors are transmitted via <strong>UDP (User Datagram Protocol)</strong> to a Unity application. This lightweight communication protocol ensures minimal latency, which is crucial for real-time interactions. In the Unity environment, the incoming data is parsed, and the head pose information is used to dynamically adjust the position of the virtual camera. An averaging filter smooths the motion by buffering data from multiple frames, enhancing stability and reducing jitter.
           </p>
-          <p>
-              The final output is projected onto an <strong>immersive display</strong>, where the camera movements create an immersive, three-dimensional viewing experience. This synchronized system allows the projection to adapt fluidly to the viewer’s head movements, providing a natural parallax effect that significantly enhances depth perception and interactivity. The methodology ensures precise pose tracking, real-time responsiveness, and seamless integration with the immersive display, making it ideal for applications in <em>augmented reality, virtual exhibitions, and interactive installations</em>.
-          </p>
-
         </div>
       </div>
     </div>
