@@ -39,6 +39,9 @@ The system consists of two key components:
    ```bash
    pip install opencv-python dlib numpy
 
+### 🎯 For Unity:
+1. **Create a new Unity project.**
+2. **Attach CameraMovement.cs to the Main Camera in your Unity scene.**
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
