@@ -29,7 +29,7 @@ The system consists of two key components:
 
 - `Face PoseV2.py` – Python script for real-time face pose estimation and UDP data transmission.
 - `CameraMovement.cs` – Unity C# script to control the Main Camera based on received pose data.
-
+- `shape_predictor_68_face_landmarks.dat` - can be accessed [here](https://drive.google.com/file/d/1jKrKU81QQF_IGWWxc230nFELWEaVGira/view?usp=drive_link)
 ---
 
 ## ⚙️ Setup Instructions
@@ -38,6 +38,7 @@ The system consists of two key components:
 1. **Install the required libraries:**
    ```bash
    pip install opencv-python dlib numpy
+2. **Move shape_predictor_68_face_landmarks.dat to Codes folder**
 
 ### 🎯 For Unity:
 1. **Create a new Unity project.**
